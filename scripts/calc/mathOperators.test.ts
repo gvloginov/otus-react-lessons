@@ -14,19 +14,15 @@ import {
 } from "./mathOperators";
 
 describe("mathOperators test cases", () => {
-  const number1 = random.number();
-  const number2 = random.number();
-
-  it("factorial -1 return error", () => {
-    expect(() => factorial(-1)).toThrow("Argument must be more or equal 0.");
-  });
+  // const number1 = random.number();
+  // const number2 = random.number();
 
   it("factorial 5 should return 120", () => {
     expect(factorial(5)).toBe(120);
   });
 
   it("add 100 + 4 to equal 104", () => {
-    expect(add(100, 2)).toBe(104);
+    expect(add(100, 4)).toBe(104);
   });
 
   it("mul 3 * 2 to equal 6", () => {
