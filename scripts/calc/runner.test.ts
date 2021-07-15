@@ -53,22 +53,12 @@ describe("Runner polish notation mode", () => {
     expect(pnMode("5 3 6 * + 6 3 / - 7 +")).toEqual(28);
   });
 
-/*
-  it("30 sin", () => {
-    expect(pnMode("30 sin")).toEqual(0.5);
-  });
-
-  it("30 sin 60 cos +", () => {
-    expect(pnMode("30 sin 60 cos +")).toEqual(1);
-  });
-*/
 });
 
 describe("polish notation reg expression test", () => {
   it("get polish notation reg expression", () => {
     expect(makepolishNotationReg()).toEqual(
       /(((\d+|\d+\.\d+)\s(\d+|\d+\.\d+)\s(\*|\/|\+|\-|\^|\!)))/
-//    /(((\d+|\d+\.\d+)\s(\d+|\d+\.\d+)\s(\*|\/|\+|\-|\^|\!))|((\d+|\d+\.\d+)\s(sin|cos|tg|ctg)))/
     );
   });
 });

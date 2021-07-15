@@ -13,22 +13,5 @@ describe("Helpers", () => {
         false
       );
     });
-/*  it("checkMathOperatorsPriorities detect priority from array of priorities", () => {
-      expect(
-        checkMathOperatorsPriorities("sin", [
-          MathPrioritiesList.zero,
-          MathPrioritiesList.first,
-          MathPrioritiesList.second,
-        ])
-      ).toBe(true);
-    });
-    it("checkMathOperatorsPriorities detect priority from array of priorities false", () => {
-      expect(
-        checkMathOperatorsPriorities("sin", [
-          MathPrioritiesList.zero,
-          MathPrioritiesList.first,
-        ])
-      ).toBe(false);
-    }); */
   });
 });

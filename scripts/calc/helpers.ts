@@ -1,19 +1,11 @@
 import {
-//trigonomenticOperators,
   mathOperatorsPriorities,
   mathOperators,
 } from "./mathOperators";
-//import type { MathOperator, TrigonomenticOperator } from "./mathOperators";
 import type { MathOperator } from "./mathOperators";
 
 export const isOperator = (item: string | number): item is MathOperator =>
   item in mathOperators;
-
-/*  
-export const isTrigonometricOperator = (
-  item: string | number
-): item is TrigonomenticOperator => item in trigonomenticOperators;
-*/
 
 export const checkMathOperatorsPriorities = (
   operator: string,

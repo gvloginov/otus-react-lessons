@@ -1,5 +1,4 @@
 import { solveSimpleExp, simplifyExp } from "./engine";
-// import { scalarOperators, trigonomenticOperators } from "./mathOperators";
 import { scalarOperators } from "./mathOperators";
 
 export const makepolishNotationReg = (): RegExp => {
@@ -9,15 +8,6 @@ export const makepolishNotationReg = (): RegExp => {
     },
     ""
   );
-/*  
-  const trigonometricPart = Object.keys(trigonomenticOperators).reduce(
-    (reg, value, index) => {
-      return `${reg}${index !== 0 ? "|" : ""}${value}`;
-    },
-    ""
-  );
-  const reg = `(((\\d+|\\d+\\.\\d+)\\s(\\d+|\\d+\\.\\d+)\\s(${scalarPart}))|((\\d+|\\d+\\.\\d+)\\s(${trigonometricPart})))`;
- */ 
 
   const reg = `(((\\d+|\\d+\\.\\d+)\\s(\\d+|\\d+\\.\\d+)\\s(${scalarPart})))`;
 

@@ -17,29 +17,10 @@ describe("Parser correct cases", () => {
     expect(parser("1 + 8 - 3 ^ 2")).toEqual([1, "+", 8, "-", 3, "^", 2]);
   });
 
- /*
-  it("sin 30 + cos 60", () => {
-    expect(parser("sin 30 + cos 60")).toEqual(["sin", 30, "+", "cos", 60]);
-  });
- */
-
-  it("3! + 7", () => {
+   it("3! + 7", () => {
     expect(parser("3 ! + 7")).toEqual([3, "!", "+", 7]);
   });
 
-/*
-  it("tg 30 + 5 - ctg 7", () => {
-    expect(parser("tg 30 + 5 - ctg 7")).toEqual([
-      "tg",
-      30,
-      "+",
-      5,
-      "-",
-      "ctg",
-      7,
-    ]);
-  });
-*/  
 });
 
 describe("Parser invalid cases", () => {

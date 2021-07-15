@@ -1,14 +1,12 @@
 import { ParsedLineType, parser } from "./parser";
 import {
   isOperator,
-//isTrigonometricOperator,
   checkMathOperatorsPriorities,
 } from "./helpers";
 import {
   mathOperators,
   MathPrioritiesList,
   FunctionOperationType,
-//trigonomenticOperators,
 } from "./mathOperators";
 
 const { zero, first, second, third, fourth } = MathPrioritiesList;
@@ -51,19 +49,6 @@ export const secondPrioritiesCalc = (stack: ParsedLineType): ParsedLineType =>
   stack.reduce<ParsedLineType>((result, item) => {
     const prevItem = result[result.length - 1];
 
-/*    
-    if (
-      isTrigonometricOperator(prevItem) &&
-      checkMathOperatorsPriorities(prevItem, second)
-    ) {
-      result = [
-        ...result.slice(0, -1),
-        trigonomenticOperators[prevItem](Number(item)),
-      ];
-    } else {
-      result.push(item);
-    }
-*/    
     result.push(item);
 
     return result;

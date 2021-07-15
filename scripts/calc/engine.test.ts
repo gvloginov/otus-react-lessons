@@ -27,18 +27,6 @@ describe("firstPrioritiesCalc simple cases", () => {
   });
 });
 
-/*
-describe("secondPrioritiesCalc simple cases", () => {
-  it("[cos, 60]", () => {
-    expect(secondPrioritiesCalc(["cos", 60])).toEqual([0.5]);
-  });
-
-  it("[sin, 90]", () => {
-    expect(secondPrioritiesCalc(["sin", 90])).toEqual([1]);
-  });
-});
-*/
-
 describe("thirdPrioritiesCalc simple cases", () => {
   it("[1, * 32]", () => {
     expect(thirdPrioritiesCalc([1, "*", 32])).toEqual([32]);
