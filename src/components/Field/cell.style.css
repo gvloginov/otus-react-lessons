@@ -1,0 +1,35 @@
+.baseCell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-color: black;
+    display: inline-block;
+    line-height: 25px; 
+    text-align: center;
+    /* margin: 5px; */
+    vertical-align: bottom;
+    background-color: lightgray;
+}
+
+.baseCellOn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-color: black;
+    display: inline-block;
+    line-height: 25px; 
+    text-align: center;
+    vertical-align: bottom;
+    background-color: red;    
+}
+
+.baseCell:hover {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-color: black;
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    background-color: blue;
+}
