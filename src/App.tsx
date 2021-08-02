@@ -11,11 +11,6 @@ export const App: React.FC<unknown> = () => {
         console.log("x: " + x + ", y: " + y);
         setSelectCell({x, y});
 
-//      const gridData = getDataGrid(x, y); 
-//      let cellCalss = 'on';
-//      cellCalss = gridData[x][y] ? 'on' : 'off';
-//      console.log("cellCalss!!!: " + cellCalss);
-
     };
     return (
         <div>
