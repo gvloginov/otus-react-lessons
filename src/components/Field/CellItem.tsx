@@ -35,6 +35,6 @@ export const CellItem = ({ className, cellId, x, y, onClick, np }: TCellItem) =>
   const BaseCell = 'baseCell';
   className = (className === undefined) ? BaseCell : className;
   return (
-    <div id={cellId} className={className} onClick={() => onClick(x, y)} role="CellItem">{np}</div>
+    <div data-testid={cellId} id={cellId} className={className} onClick={() => onClick(x, y)} role="CellItem">{np}</div>
   );
 };
