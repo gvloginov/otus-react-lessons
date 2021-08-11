@@ -5,10 +5,6 @@ import { CellItem } from "./CellItem";
 
 describe("Cell", () => {
     const onClick = jest.fn();
-    const coords = {
-        x: 0,
-        y: 3,
-      };    
     it("render Cell", () => {
         render(<CellItem
             className='baseCell'
