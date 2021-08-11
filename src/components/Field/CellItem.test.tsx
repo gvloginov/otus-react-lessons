@@ -17,9 +17,7 @@ describe("Cell", () => {
             np={4} />);
         screen.debug();
 
-        expect(screen.getByRole("CellItem")).toBeInTheDocument();        
-
         fireEvent.click(screen.getByTestId('0_3')); // или  fireEvent.click(screen.getByRole("CellItem")); или  fireEvent.click(screen.queryAllByRole('CellItem')[0]);
-        expect(onClick).toHaveBeenCalledTimes(1)
+        expect(onClick).toHaveBeenCalledTimes(1);
     })
 })
