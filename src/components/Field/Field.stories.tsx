@@ -1,14 +1,14 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { Field } from "./Field";
-import {ComponentMeta, ComponentStory, Meta, Story} from "@storybook/react";
+import { ComponentMeta, ComponentStory, Meta, Story } from "@storybook/react";
 
 export default {
     title: "UI/Field",
     component: Field,
     argTypes: {
         backgroundColor: { control: 'color' },
-      },    
+    },
 } as ComponentMeta<typeof Field>;
 
 const Template: ComponentStory<typeof Field> = (args) => <Field  {...args} />;

@@ -1,7 +1,7 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { CellItem } from "./CellItem";
-import {ComponentMeta, ComponentStory, Meta, Story} from "@storybook/react";
+import { ComponentMeta, ComponentStory, Meta, Story } from "@storybook/react";
 
 export default {
   title: "UI/CellItem",
@@ -12,7 +12,7 @@ export default {
       options: ['baseCell', 'baseCellOn'],
       control: { type: 'radio' }
     }
-  },  
+  },
 } as ComponentMeta<typeof CellItem>;
 
 const Template: ComponentStory<typeof CellItem> = (args) => <CellItem  {...args} />;
